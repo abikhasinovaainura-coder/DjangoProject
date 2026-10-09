@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Тапсырыс қабылданды - PharmOnline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="card border-0 shadow-sm rounded-4 p-5 text-center bg-white" style="max-width: 500px; width: 100%;">
+        <div class="mb-4">
+            <i class="fa-solid fa-circle-check text-success" style="font-size: 70px;"></i>
+        </div>
+        <h2 class="fw-bold text-dark mb-2">Тапсырысыңыз қабылданды!</h2>
+        <p class="text-muted mb-4">
+            Тапсырыс нөмірі: <b>#{{ order.id }}</b><br>
+            Жақын арада оператор сізбен хабарласады.
+        </p>
+        <div class="d-grid gap-2">
+            <a href="{% url 'core:catalog' %}" class="btn btn-success rounded-pill py-2 fw-bold shadow-sm">
+                <i class="fa-solid fa-store me-1"></i> Каталогқа қайту
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

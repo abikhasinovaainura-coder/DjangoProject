@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang|default:'kk' }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ t.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light">
+    <!-- Навигация -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="{% url 'core:catalog' %}"><i class="fa-solid fa-capsules"></i> PharmOnline</a>
+
+            <div class="d-flex align-items-center gap-3">
+                <!-- Тіл ауыстыру батырмалары -->
+                <div class="btn-group shadow-sm" role="group">
+                    <a href="{% url 'core:set_language' 'kk' %}" class="btn btn-sm {% if current_lang == 'kk' %}btn-light fw-bold text-success{% else %}btn-outline-light{% endif %}">KK</a>
+                    <a href="{% url 'core:set_language' 'ru' %}" class="btn btn-sm {% if current_lang == 'ru' %}btn-light fw-bold text-success{% else %}btn-outline-light{% endif %}">RU</a>
+                    <a href="{% url 'core:set_language' 'en' %}" class="btn btn-sm {% if current_lang == 'en' %}btn-light fw-bold text-success{% else %}btn-outline-light{% endif %}">EN</a>
+                </div>
+
+                <!-- Каталог -->
+                <a href="{% url 'core:catalog' %}" class="btn btn-outline-light rounded-pill px-3"><i class="fa-solid fa-store"></i> {{ t.catalog }}</a>
+                <!-- Қойма қоры -->
+                <a href="{% url 'core:stock' %}" class="btn btn-outline-light rounded-pill px-3"><i class="fa-solid fa-warehouse"></i> {{ t.stock }}</a>
+                <!-- Біз туралы -->
+                <a href="{% url 'core:about' %}" class="btn btn-outline-light rounded-pill px-3"><i class="fa-solid fa-circle-info"></i> {{ t.about }}</a>
+
+                <!-- WhatsApp Жедел байланыс (қауіпсіз ватсап сілтемесі) -->
+                <a href="https://wa.me/87058873307" target="_blank" class="btn btn-outline-light rounded-pill px-3 text-warning fw-semibold">
+                    <i class="fa-brands fa-whatsapp text-warning"></i> {{ t.whatsapp }}
+                </a>
+
+                <!-- Себет -->
+                <a href="{% url 'core:cart' %}" class="btn btn-light text-success fw-bold rounded-pill px-3">
+                    <i class="fa-solid fa-shopping-cart"></i> {{ t.cart }}
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Іздеу және Санаттар -->
+        <div class="row mb-4 g-3">
+            <div class="col-md-8">
+                <form method="GET" class="d-flex shadow-sm">
+                    <input type="text" name="q" class="form-control form-control-lg rounded-start-pill ps-4" placeholder="{{ t.search_placeholder }}" value="{{ request.GET.q|default:'' }}">
+                    <button class="btn btn-success px-4 rounded-end-pill" type="submit"><i class="fa-solid fa-search"></i></button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select form-select-lg shadow-sm rounded-pill px-3" onchange="location = this.value;">
+                    <option value="{% url 'core:catalog' %}">{{ t.all_categories }}</option>
+                    {% for cat in categories %}
+                        <option value="?category={{ cat.id }}" {% if request.GET.category == cat.id|stringformat:"s" %}selected{% endif %}>
+                            {% if current_lang == 'ru' %}{{ cat.name_ru|default:cat.name_kk }}
+                            {% elif current_lang == 'en' %}{{ cat.name_en|default:cat.name_kk }}
+                            {% else %}{{ cat.name_kk }}{% endif %}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <!-- Дәрілер тізімі -->
+        <div class="row g-4">
+            {% for med in medicines %}
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-success bg-opacity-10 text-success mb-2 px-2 py-1 rounded-pill">
+                                {% if current_lang == 'ru' %}{{ med.category.name_ru|default:med.category.name_kk }}
+                                {% elif current_lang == 'en' %}{{ med.category.name_en|default:med.category.name_kk }}
+                                {% else %}{{ med.category.name_kk }}{% endif %}
+                            </span>
+
+                            <!-- Көптілді дәрі атауы -->
+                            <h5 class="card-title fw-bold text-dark">
+                                {% if current_lang == 'ru' %}{{ med.name_ru|default:med.name_kk }}
+                                {% elif current_lang == 'en' %}{{ med.name_en|default:med.name_kk }}
+                                {% else %}{{ med.name_kk }}{% endif %}
+                            </h5>
+
+                            <!-- Көптілді сипаттамасы -->
+                            <p class="text-muted small mb-3">
+                                {% if current_lang == 'ru' %}{{ med.description_ru|default:med.description_kk }}
+                                {% elif current_lang == 'en' %}{{ med.description_en|default:med.description_kk }}
+                                {% else %}{{ med.description_kk }}{% endif %}
+                            </p>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fs-5 fw-bold text-success">{{ med.price }} ₸</span>
+                                <span class="small {% if med.stock > 0 %}text-secondary{% else %}text-danger fw-bold{% endif %}">
+                                    {{ t.stock_count }}: {{ med.stock }}
+                                </span>
+                            </div>
+                            {% if med.stock > 0 %}
+                                <a href="{% url 'core:add_to_cart' med.id %}" class="btn btn-success w-100 rounded-pill py-2 fw-semibold shadow-sm">
+                                    <i class="fa-solid fa-cart-plus"></i> {{ t.add_to_cart }}
+                                </a>
+                            {% else %}
+                                <button class="btn btn-outline-secondary w-100 rounded-pill py-2" disabled>{{ t.out_of_stock }}</button>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="text-center py-5">
+                <h4 class="text-muted">Дәрілер табылмады.</h4>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Чат-бот виджеті -->
+    <style>
+        #chatbot-container { position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: Arial, sans-serif; }
+        #chatbot-btn { background-color: #198754; color: white; border: none; border-radius: 50px; padding: 12px 20px; font-size: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); cursor: pointer; display: flex; align-items: center; gap: 8px; }
+        #chatbot-window { display: none; width: 320px; height: 400px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.3); flex-direction: column; overflow: hidden; margin-bottom: 10px; }
+        #chatbot-header { background: #198754; color: white; padding: 12px; font-weight: bold; }
+        #chatbot-messages { flex: 1; padding: 10px; overflow-y: auto; font-size: 14px; display: flex; flex-direction: column; gap: 8px; background: #f8f9fa; }
+        .chat-msg { padding: 8px 12px; border-radius: 10px; max-width: 80%; white-space: pre-line; }
+        .user-msg { background: #d1e7dd; align-self: flex-end; color: #0f5132; }
+        .bot-msg { background: white; align-self: flex-start; border: 1px solid #dee2e6; color: #333; }
+        #chatbot-input-area { display: flex; padding: 8px; border-top: 1px solid #ddd; background: white; }
+        #chatbot-input { flex: 1; border: 1px solid #ced4da; border-radius: 20px; padding: 6px 12px; outline: none; font-size: 14px; }
+        #chatbot-send { background: #198754; color: white; border: none; border-radius: 20px; padding: 6px 14px; margin-left: 6px; cursor: pointer; }
+    </style>
+
+    <div id="chatbot-container">
+        <div id="chatbot-window">
+            <div id="chatbot-header" class="d-flex justify-content-between align-items-center px-3">
+                <span><i class="fa-solid fa-robot"></i> {{ t.chat_title }}</span>
+                <button onclick="toggleChat()" class="btn btn-sm text-white fs-5">&times;</button>
+            </div>
+            <div id="chatbot-messages">
+                <div class="chat-msg bot-msg">{{ t.bot_welcome }}</div>
+            </div>
+            <div id="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="{{ t.chat_placeholder }}">
+                <button id="chatbot-send" onclick="sendChatMessage()">{{ t.send }}</button>
+            </div>
+        </div>
+        <button id="chatbot-btn" onclick="toggleChat()"><i class="fa-solid fa-comments fa-lg"></i> {{ t.ask_question }}</button>
+    </div>
+
+    <script>
+        function toggleChat() {
+            const win = document.getElementById('chatbot-window');
+            win.style.display = win.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chatbot-input');
+            const msg = input.value.trim();
+            if (!msg) return;
+
+            const container = document.getElementById('chatbot-messages');
+            container.innerHTML += `<div class="chat-msg user-msg">${msg}</div>`;
+            input.value = '';
+            container.scrollTop = container.scrollHeight;
+
+            const formData = new FormData();
+            formData.append('message', msg);
+            formData.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+            fetch("{% url 'core:chatbot_api' %}", {
+                method: 'POST',
+                body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+                container.innerHTML += `<div class="chat-msg bot-msg">${data.reply}</div>`;
+                container.scrollTop = container.scrollHeight;
+            });
+        }
+
+        document.getElementById('chatbot-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                sendChatMessage();
+            }
+        });
+    </script>
+</body>
+</html>

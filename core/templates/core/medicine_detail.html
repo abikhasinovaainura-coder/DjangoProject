@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ medicine.name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container my-5" style="max-width: 600px;">
+        <div class="card shadow p-4">
+            <h2>{{ medicine.name }}</h2>
+            <p class="text-muted">Санат: {{ medicine.category.name }}</p>
+            <hr>
+            <p><strong>Сипаттамасы:</strong> {{ medicine.description|default:"Сипаттама жоқ" }}</p>
+            <p><strong>Бағасы:</strong> <span class="text-success fs-4">{{ medicine.price }} ₸</span></p>
+            <p><strong>Қоймадағы қалдық:</strong> {{ medicine.stock }} дана</p>
+            <div class="d-flex justify-content-between mt-4">
+                <a href="{% url 'core:catalog' %}" class="btn btn-secondary">← Артқа қайту</a>
+                {% if medicine.stock > 0 %}
+                    <a href="{% url 'core:create_order' medicine.id %}" class="btn btn-success">Тапсырыс беру</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

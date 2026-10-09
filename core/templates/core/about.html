@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ t.about }} - PharmOnline</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+    <!-- Жоғарғы мәзір (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="{% url 'core:catalog' %}">
+                <i class="bi bi-capsule-pill me-2"></i> PharmOnline
+            </a>
+            <div class="d-flex align-items-center">
+                <a href="{% url 'core:catalog' %}" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-grid"></i> {{ t.catalog }}</a>
+                <a href="{% url 'core:stock' %}" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-box-seam"></i> {{ t.stock }}</a>
+                <a href="{% url 'core:about' %}" class="btn btn-light btn-sm me-2 text-success fw-bold"><i class="bi bi-info-circle"></i> {{ t.about }}</a>
+                <a href="https://wa.me/77058873307" target="_blank" class="btn btn-success btn-sm me-2 border-light"><i class="bi bi-whatsapp"></i> {{ t.whatsapp }}</a>
+                <a href="{% url 'core:cart' %}" class="btn btn-outline-light btn-sm"><i class="bi bi-cart"></i> {{ t.cart }}</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Негізгі мазмұн -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 bg-white p-5 rounded-4 shadow-sm border">
+                
+                <div class="text-center mb-5">
+                    <i class="bi bi-capsule text-success mb-2" style="font-size: 3rem;"></i>
+                    <h1 class="fw-bold mt-2">{{ t.about_title }}</h1>
+                    <p class="text-muted">{{ t.about_subtitle }}</p>
+                </div>
+
+                <p class="fs-5 text-secondary mb-4">
+                    {{ t.about_desc }}
+                </p>
+
+                <h3 class="fw-bold text-success mt-4 mb-3">
+                    <i class="bi bi-bullseye"></i> {{ t.our_mission }}
+                </h3>
+                <p class="text-secondary mb-4">
+                    {{ t.mission_text }}
+                </p>
+
+                <h3 class="fw-bold text-success mt-4 mb-3">
+                    <i class="bi bi-check2-circle"></i> {{ t.why_us }}
+                </h3>
+                <ul class="list-unstyled text-secondary mb-4">
+                    <li class="mb-2"><i class="bi bi-check-lg text-success fw-bold me-2"></i> {{ t.feature_1 }}</li>
+                    <li class="mb-2"><i class="bi bi-check-lg text-success fw-bold me-2"></i> {{ t.feature_2 }}</li>
+                    <li class="mb-2"><i class="bi bi-check-lg text-success fw-bold me-2"></i> {{ t.feature_3 }}</li>
+                    <li class="mb-2"><i class="bi bi-check-lg text-success fw-bold me-2"></i> {{ t.feature_4 }}</li>
+                </ul>
+
+                <div class="bg-light p-4 rounded-3 mt-4 border">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-headset text-success"></i> {{ t.contact_info }}</h5>
+                    <p class="mb-2"><strong>{{ t.phone_label }}</strong> +7 (705) 887-33-07</p>
+                    <p class="mb-2"><strong>{{ t.email_label }}</strong> support@pharmonline.kz</p>
+                    <p class="mb-0"><strong>{{ t.address_label }}</strong> {{ t.address_val }}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

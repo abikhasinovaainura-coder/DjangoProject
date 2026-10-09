@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ t.order_title }} - PharmOnline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light">
+    <!-- Навигация -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="{% url 'core:catalog' %}"><i class="fa-solid fa-capsules"></i> PharmOnline</a>
+
+            <div class="d-flex align-items-center gap-3">
+                <!-- Тіл ауыстыру батырмалары -->
+                <div class="btn-group shadow-sm" role="group">
+                    <a href="{% url 'core:set_language' 'kk' %}" class="btn btn-sm {% if current_lang == 'kk' %}btn-light fw-bold text-success{% else %}btn-outline-light{% endif %}">KK</a>
+                    <a href="{% url 'core:set_language' 'ru' %}" class="btn btn-sm {% if current_lang == 'ru' %}btn-light fw-bold text-success{% else %}btn-outline-light{% endif %}">RU</a>
+                    <a href="{% url 'core:set_language' 'en' %}" class="btn btn-sm {% if current_lang == 'en' %}btn-light fw-bold text-success{% else %}btn-outline-light{% endif %}">EN</a>
+                </div>
+
+                <!-- Каталог -->
+                <a href="{% url 'core:catalog' %}" class="btn btn-outline-light rounded-pill px-3"><i class="fa-solid fa-store"></i> {{ t.catalog }}</a>
+                <!-- Қойма қоры -->
+                <a href="{% url 'core:stock' %}" class="btn btn-outline-light rounded-pill px-3"><i class="fa-solid fa-warehouse"></i> {{ t.stock }}</a>
+                <!-- Біз туралы -->
+                <a href="{% url 'core:about' %}" class="btn btn-outline-light rounded-pill px-3"><i class="fa-solid fa-circle-info"></i> {{ t.about }}</a>
+
+                <!-- WhatsApp Жедел байланыс батырмасы -->
+                <a href="https://wa.me/87058873307" target="_blank" class="btn btn-outline-light rounded-pill px-3 text-warning fw-semibold">
+                    <i class="fa-brands fa-whatsapp text-warning"></i> {{ t.whatsapp }}
+                </a>
+
+                <!-- Себет -->
+                <a href="{% url 'core:cart' %}" class="btn btn-light text-success fw-bold rounded-pill px-3">
+                    <i class="fa-solid fa-shopping-cart"></i> {{ t.cart }}
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card shadow-sm border-0 rounded-4 p-5 bg-white">
+                    <h3 class="fw-bold text-success mb-3"><i class="fa-solid fa-file-invoice-dollar"></i> {{ t.order_title }}</h3>
+                    <p class="text-muted mb-4">{{ t.total_to_pay }} <strong class="fs-4 text-success">{{ total_price }} ₸</strong></p>
+
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold text-secondary">{{ t.full_name_label }}</label>
+                            <input type="text" name="full_name" class="form-control form-control-lg rounded-pill px-3" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold text-secondary">{{ t.phone_label }}</label>
+                            <input type="text" name="phone" class="form-control form-control-lg rounded-pill px-3" placeholder="+7 (700) 000-00-00" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold text-secondary">{{ t.address_label }}</label>
+                            <textarea name="address" class="form-control rounded-4 p-3" rows="3" required></textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold text-secondary">{{ t.payment_label }}</label>
+                            <div class="form-check p-3 border rounded-3 mb-2 shadow-sm">
+                                <input class="form-check-input ms-1" type="radio" name="payment_type" id="transfer" value="transfer" checked>
+                                <label class="form-check-label fw-semibold ms-2" for="transfer">
+                                    <i class="fa-solid fa-money-bill-transfer text-success me-1"></i> {{ t.pay_transfer }}
+                                </label>
+                            </div>
+                            <div class="form-check p-3 border rounded-3 shadow-sm">
+                                <input class="form-check-input ms-1" type="radio" name="payment_type" id="qr" value="qr">
+                                <label class="form-check-label fw-semibold ms-2" for="qr">
+                                    <i class="fa-solid fa-qrcode text-success me-1"></i> {{ t.pay_qr }}
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 btn-lg rounded-pill py-3 fw-bold shadow-sm">
+                            {{ t.confirm_order }}
+                        </button>
+                    </form>
+
+                    <div class="text-center mt-4">
+                        <a href="{% url 'core:cart' %}" class="text-success text-decoration-none fw-semibold">
+                            {{ t.back_to_cart }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
