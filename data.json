@@ -1,0 +1,1794 @@
+[
+{
+  "model": "core.category",
+  "pk": 1,
+  "fields": {
+    "name_kk": "Антибиотиктер",
+    "name_ru": "Антибиотики",
+    "name_en": "Antibiotics"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 2,
+  "fields": {
+    "name_kk": "Ауыруды басатын",
+    "name_ru": "Обезболивающие",
+    "name_en": "Painkillers"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 3,
+  "fields": {
+    "name_kk": "Витаминдер мен БАД",
+    "name_ru": "Витамины и БАД",
+    "name_en": "Vitamins & Supplements"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 4,
+  "fields": {
+    "name_kk": "Суық тию және тұмау",
+    "name_ru": "Простуда и грипп",
+    "name_en": "Cold & Flu"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 5,
+  "fields": {
+    "name_kk": "Асқазан-ішек жолдары",
+    "name_ru": "ЖКТ и пищеварение",
+    "name_en": "Digestive Health"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 6,
+  "fields": {
+    "name_kk": "Жүрек-қан тамырлары",
+    "name_ru": "Сердечно-сосудистые",
+    "name_en": "Cardiovascular"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 7,
+  "fields": {
+    "name_kk": "Аллергияға қарсы",
+    "name_ru": "Противоаллергические",
+    "name_en": "Anti-allergy"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 8,
+  "fields": {
+    "name_kk": "Шөптер мен шәрбаттар",
+    "name_ru": "Сиропы и травы",
+    "name_en": "Syrups & Herbs"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 9,
+  "fields": {
+    "name_kk": "Медициналық құралдар",
+    "name_ru": "Медицинские изделия",
+    "name_en": "Medical Supplies"
+  }
+},
+{
+  "model": "core.category",
+  "pk": 10,
+  "fields": {
+    "name_kk": "Тері күтімі және мазьдар",
+    "name_ru": "Уход за кожей и мази",
+    "name_en": "Skincare & Ointments"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name_kk": "Амоксициллин 500мг",
+    "name_ru": "Амоксициллин 500мг",
+    "name_en": "Amoxicillin 500mg",
+    "description_kk": "Бактерияға қарсы кең спектрлі әсер",
+    "description_ru": "Антибактериальное широкого спектра",
+    "description_en": "Broad-spectrum antibacterial",
+    "price": "1200.00",
+    "stock": 22,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name_kk": "Азитромицин 250мг",
+    "name_ru": "Азитромицин 250мг",
+    "name_en": "Azithromycin 250mg",
+    "description_kk": "Тыныс жолдары инфекциясына қарсы",
+    "description_ru": "При инфекциях дыхательных путей",
+    "description_en": "For respiratory infections",
+    "price": "1850.00",
+    "stock": 14,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name_kk": "Ципрофлоксацин",
+    "name_ru": "Ципрофлоксацин",
+    "name_en": "Ciprofloxacin",
+    "description_kk": "Антибиотик",
+    "description_ru": "Антибиотик",
+    "description_en": "Antibiotic",
+    "price": "950.00",
+    "stock": 29,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "name_kk": "Цефтриаксон",
+    "name_ru": "Цефтриаксон",
+    "name_en": "Ceftriaxone",
+    "description_kk": "Инъекциялық антибиотик",
+    "description_ru": "Антибиотик в инъекциях",
+    "description_en": "Injectable antibiotic",
+    "price": "2100.00",
+    "stock": 10,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "name_kk": "Левофлоксацин",
+    "name_ru": "Левофлоксацин",
+    "name_en": "Levofloxacin",
+    "description_kk": "Антибиотик",
+    "description_ru": "Антибиотик",
+    "description_en": "Antibiotic",
+    "price": "2400.00",
+    "stock": 12,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "name_kk": "Доксициклин",
+    "name_ru": "Доксициклин",
+    "name_en": "Doxycycline",
+    "description_kk": "Антибиотик",
+    "description_ru": "Антибиотик",
+    "description_en": "Antibiotic",
+    "price": "700.00",
+    "stock": 40,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 7,
+  "fields": {
+    "category": 1,
+    "name_kk": "Кларитромицин",
+    "name_ru": "Кларитромицин",
+    "name_en": "Clarithromycin",
+    "description_kk": "Антибиотик",
+    "description_ru": "Антибиотик",
+    "description_en": "Antibiotic",
+    "price": "2900.00",
+    "stock": 8,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 8,
+  "fields": {
+    "category": 1,
+    "name_kk": "Амоксиклав",
+    "name_ru": "Амоксиклав",
+    "name_en": "Amoxiclav",
+    "description_kk": "Қорғалған пенициллин",
+    "description_ru": "Защищенный пенициллин",
+    "description_en": "Protected penicillin",
+    "price": "2600.00",
+    "stock": 14,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 9,
+  "fields": {
+    "category": 1,
+    "name_kk": "Линкомицин",
+    "name_ru": "Линкомицин",
+    "name_en": "Lincomycin",
+    "description_kk": "Антибиотик",
+    "description_ru": "Антибиотик",
+    "description_en": "Antibiotic",
+    "price": "850.00",
+    "stock": 20,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 10,
+  "fields": {
+    "category": 1,
+    "name_kk": "Сумамед",
+    "name_ru": "Сумамед",
+    "name_en": "Sumamed",
+    "description_kk": "Тез әсер ететін антибиотик",
+    "description_ru": "Антибиотик быстрого действия",
+    "description_en": "Fast-acting antibiotic",
+    "price": "3100.00",
+    "stock": 18,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 11,
+  "fields": {
+    "category": 2,
+    "name_kk": "Парацетамол 500мг",
+    "name_ru": "Парацетамол 500мг",
+    "name_en": "Paracetamol 500mg",
+    "description_kk": "Қызу түсіретін және ауыруды басатын",
+    "description_ru": "Жаропонижающее и обезболивающее",
+    "description_en": "Antipyretic and analgesic",
+    "price": "350.00",
+    "stock": 100,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 12,
+  "fields": {
+    "category": 2,
+    "name_kk": "Ибупрофен 400мг",
+    "name_ru": "Ибупрофен 400мг",
+    "name_en": "Ibuprofen 400mg",
+    "description_kk": "Қабынуға қарсы және ауырғанды басатын",
+    "description_ru": "Противовоспалительное и обезболивающее",
+    "description_en": "Anti-inflammatory and pain relief",
+    "price": "550.00",
+    "stock": 80,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 13,
+  "fields": {
+    "category": 2,
+    "name_kk": "Анальгин",
+    "name_ru": "Анальгин",
+    "name_en": "Analgin",
+    "description_kk": "Ауырғанды басуға арналған",
+    "description_ru": "Обезболивающее средство",
+    "description_en": "Pain reliever",
+    "price": "280.00",
+    "stock": 60,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 14,
+  "fields": {
+    "category": 2,
+    "name_kk": "Кетонал",
+    "name_ru": "Кетонал",
+    "name_en": "Ketonal",
+    "description_kk": "Күшті ауырғанды басатын",
+    "description_ru": "Сильное обезболивающее",
+    "description_en": "Strong painkiller",
+    "price": "1150.00",
+    "stock": 25,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 15,
+  "fields": {
+    "category": 2,
+    "name_kk": "Нимесил порошок",
+    "name_ru": "Нимесил порошок",
+    "name_en": "Nimesil Powder",
+    "description_kk": "Буын және бас ауруына",
+    "description_ru": "При болях в суставах и голове",
+    "description_en": "For joint and headache",
+    "price": "220.00",
+    "stock": 150,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 16,
+  "fields": {
+    "category": 2,
+    "name_kk": "Цитрамон П",
+    "name_ru": "Цитрамон П",
+    "name_en": "Citramon P",
+    "description_kk": "Бас сақинасы мен бас ауруына",
+    "description_ru": "При головной боли и мигрени",
+    "description_en": "For headache and migraine",
+    "price": "200.00",
+    "stock": 90,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 17,
+  "fields": {
+    "category": 2,
+    "name_kk": "Спазмалгон",
+    "name_ru": "Спазмалгон",
+    "name_en": "Spasmalgon",
+    "description_kk": "Түйілу мен ауруды басады",
+    "description_ru": "Снимает спазмы и боль",
+    "description_en": "Relieves spasms and pain",
+    "price": "650.00",
+    "stock": 45,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 18,
+  "fields": {
+    "category": 2,
+    "name_kk": "Темпалгин",
+    "name_ru": "Темпалгин",
+    "name_en": "Tempalgin",
+    "description_kk": "Ауруды басатын",
+    "description_ru": "Обезболивающее",
+    "description_en": "Pain relief",
+    "price": "720.00",
+    "stock": 35,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 19,
+  "fields": {
+    "category": 2,
+    "name_kk": "Баралгин М",
+    "name_ru": "Баралгин М",
+    "name_en": "Baralgin M",
+    "description_kk": "Ауырсынғанды басады",
+    "description_ru": "Обезболивающее",
+    "description_en": "Pain relief",
+    "price": "800.00",
+    "stock": 30,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 20,
+  "fields": {
+    "category": 2,
+    "name_kk": "Нурофен форте",
+    "name_ru": "Нурофен форте",
+    "name_en": "Nurofen Forte",
+    "description_kk": "Қызу мен қабынуға қарсы",
+    "description_ru": "Жаропонижающее",
+    "description_en": "Fever reducer",
+    "price": "1300.00",
+    "stock": 50,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 21,
+  "fields": {
+    "category": 3,
+    "name_kk": "Компливит витаминдер",
+    "name_ru": "Компливит витамины",
+    "name_en": "Complivit Vitamins",
+    "description_kk": "Жалпы ағзаны нығайту",
+    "description_ru": "Общеукрепляющее",
+    "description_en": "General strengthening",
+    "price": "1400.00",
+    "stock": 40,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 22,
+  "fields": {
+    "category": 3,
+    "name_kk": "Витамин C 1000мг",
+    "name_ru": "Витамин C 1000мг",
+    "name_en": "Vitamin C 1000mg",
+    "description_kk": "Иммунитетті көтеру",
+    "description_ru": "Повышение иммунитета",
+    "description_en": "Boosts immunity",
+    "price": "900.00",
+    "stock": 70,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 23,
+  "fields": {
+    "category": 3,
+    "name_kk": "Аквадетрим Витамин D3",
+    "name_ru": "Аквадетрим Витамин D3",
+    "name_en": "Vitamin D3 Drops",
+    "description_kk": "Сүйек жүйесі үшін",
+    "description_ru": "Для костной системы",
+    "description_en": "For bone health",
+    "price": "1800.00",
+    "stock": 30,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 24,
+  "fields": {
+    "category": 3,
+    "name_kk": "Омега-3 капсулалар",
+    "name_ru": "Омега-3 капсулы",
+    "name_en": "Omega-3 Capsules",
+    "description_kk": "Жүрек және ми жұмысына",
+    "description_ru": "Для сердца и мозга",
+    "description_en": "For heart and brain",
+    "price": "2500.00",
+    "stock": 25,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 25,
+  "fields": {
+    "category": 3,
+    "name_kk": "Магний В6",
+    "name_ru": "Магний В6",
+    "name_en": "Magnesium B6",
+    "description_kk": "Жүйке жүйесін қолдау",
+    "description_ru": "Поддержка нервной системы",
+    "description_en": "Nervous system support",
+    "price": "2100.00",
+    "stock": 35,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 26,
+  "fields": {
+    "category": 3,
+    "name_kk": "Цинктерал",
+    "name_ru": "Цинктерал",
+    "name_en": "Zincteral",
+    "description_kk": "Шаш пен теріге арналған",
+    "description_ru": "Для волос и кожи",
+    "description_en": "For hair and skin",
+    "price": "1600.00",
+    "stock": 20,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 27,
+  "fields": {
+    "category": 3,
+    "name_kk": "Мультивитамин балаларға",
+    "name_ru": "Мультивитамины детские",
+    "name_en": "Kids Multivitamins",
+    "description_kk": "Балаларға арналған кешен",
+    "description_ru": "Комплекс для детей",
+    "description_en": "Children's complex",
+    "price": "2300.00",
+    "stock": 18,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 28,
+  "fields": {
+    "category": 3,
+    "name_kk": "Кальций Д3 Никомед",
+    "name_ru": "Кальций Д3 Никомед",
+    "name_en": "Calcium D3",
+    "description_kk": "Сүйек пен тіске",
+    "description_ru": "Для зубов и костей",
+    "description_en": "For teeth and bones",
+    "price": "2700.00",
+    "stock": 22,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 29,
+  "fields": {
+    "category": 3,
+    "name_kk": "Спирулина таблетка",
+    "name_ru": "Спирулина в таблетках",
+    "name_en": "Spirulina Tablets",
+    "description_kk": "Ағзаны тазарту",
+    "description_ru": "Очищение организма",
+    "description_en": "Body cleansing",
+    "price": "1900.00",
+    "stock": 15,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 30,
+  "fields": {
+    "category": 3,
+    "name_kk": "Эхинацея сығындысы",
+    "name_ru": "Экстракт эхинацеи",
+    "name_en": "Echinacea Extract",
+    "description_kk": "Иммунитет көтеру",
+    "description_ru": "Иммуностимулирующее",
+    "description_en": "Immune booster",
+    "price": "850.00",
+    "stock": 50,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 31,
+  "fields": {
+    "category": 4,
+    "name_kk": "Колдрекс порошок",
+    "name_ru": "Колдрекс порошок",
+    "name_en": "Coldrex Powder",
+    "description_kk": "Тұмау белгілерін кетіру",
+    "description_ru": "При симптомах простуды",
+    "description_en": "Cold symptom relief",
+    "price": "320.00",
+    "stock": 120,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 32,
+  "fields": {
+    "category": 4,
+    "name_kk": "Терафлю пакет",
+    "name_ru": "Терафлю пакет",
+    "name_en": "Theraflu Sachet",
+    "description_kk": "Ыстық сусын тұмауға қарсы",
+    "description_ru": "Горячий напиток от гриппа",
+    "description_en": "Hot drink for flu",
+    "price": "350.00",
+    "stock": 130,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 33,
+  "fields": {
+    "category": 4,
+    "name_kk": "Фервекс",
+    "name_ru": "Фервекс",
+    "name_en": "Fervex",
+    "description_kk": "Тұмау мен мұрын бітелуге",
+    "description_ru": "От гриппа и заложенности",
+    "description_en": "For flu and congestion",
+    "price": "330.00",
+    "stock": 110,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 34,
+  "fields": {
+    "category": 4,
+    "name_kk": "Антигриппин",
+    "name_ru": "Антигриппин",
+    "name_en": "Antigrippin",
+    "description_kk": "Тұмауға қарсы кешен",
+    "description_ru": "Комплекс от гриппа",
+    "description_en": "Flu complex",
+    "price": "850.00",
+    "stock": 40,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 35,
+  "fields": {
+    "category": 4,
+    "name_kk": "Римантадин",
+    "name_ru": "Римантадин",
+    "name_en": "Rimantadine",
+    "description_kk": "Вирусқа қарсы",
+    "description_ru": "Противовирусное",
+    "description_en": "Antiviral",
+    "price": "600.00",
+    "stock": 50,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 36,
+  "fields": {
+    "category": 4,
+    "name_kk": "Арбидол",
+    "name_ru": "Арбидол",
+    "name_en": "Arbidol",
+    "description_kk": "Иммуномодулятор",
+    "description_ru": "Иммуномодулятор",
+    "description_en": "Immunomodulator",
+    "price": "2400.00",
+    "stock": 20,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 37,
+  "fields": {
+    "category": 4,
+    "name_kk": "Кагоцел",
+    "name_ru": "Кагоцел",
+    "name_en": "Kagocel",
+    "description_kk": "Тұмаудың алдын алу",
+    "description_ru": "Профилактика гриппа",
+    "description_en": "Flu prevention",
+    "price": "2800.00",
+    "stock": 15,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 38,
+  "fields": {
+    "category": 4,
+    "name_kk": "Гриппферон тамшы",
+    "name_ru": "Гриппферон капли",
+    "name_en": "Grippferon Drops",
+    "description_kk": "Мұрынға арналған тамшы",
+    "description_ru": "Капли в нос",
+    "description_en": "Nasal drops",
+    "price": "1700.00",
+    "stock": 30,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 39,
+  "fields": {
+    "category": 4,
+    "name_kk": "Оксалин мазы",
+    "name_ru": "Оксалиновая мазь",
+    "name_en": "Oxolinic Ointment",
+    "description_kk": "Вирустан қорғаныс",
+    "description_ru": "Защита от вирусов",
+    "description_en": "Virus protection",
+    "price": "450.00",
+    "stock": 80,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 40,
+  "fields": {
+    "category": 4,
+    "name_kk": "Мукалтин",
+    "name_ru": "Мукалтин",
+    "name_en": "Mukaltin",
+    "description_kk": "Жөтелге қарсы таблетка",
+    "description_ru": "От кашля",
+    "description_en": "Cough tablets",
+    "price": "150.00",
+    "stock": 200,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 41,
+  "fields": {
+    "category": 5,
+    "name_kk": "Мезим форте",
+    "name_ru": "Мезим форте",
+    "name_en": "Meзим Forte",
+    "description_kk": "Ас қорытуды жақсарту",
+    "description_ru": "Улучшение пищеварения",
+    "description_en": "Improves digestion",
+    "price": "950.00",
+    "stock": 60,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 42,
+  "fields": {
+    "category": 5,
+    "name_kk": "Активированный уголь",
+    "name_ru": "Активированный уголь",
+    "name_en": "Activated Charcoal",
+    "description_kk": "Улануға қарсы",
+    "description_ru": "При отравлениях",
+    "description_en": "For poisoning",
+    "price": "120.00",
+    "stock": 300,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 43,
+  "fields": {
+    "category": 5,
+    "name_kk": "Линекс капсула",
+    "name_ru": "Линекс капсулы",
+    "name_en": "Linex Capsules",
+    "description_kk": "Ішек микрофлорасын қалпына келтіру",
+    "description_ru": "Восстановление микрофлоры",
+    "description_en": "Restores microflora",
+    "price": "2600.00",
+    "stock": 25,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 44,
+  "fields": {
+    "category": 5,
+    "name_kk": "Омепразол",
+    "name_ru": "Омепразол",
+    "name_en": "Omeprazole",
+    "description_kk": "Асқазан жарасына қарсы",
+    "description_ru": "При язве и гастрите",
+    "description_en": "For gastritis",
+    "price": "400.00",
+    "stock": 90,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 45,
+  "fields": {
+    "category": 5,
+    "name_kk": "Смекта порошок",
+    "name_ru": "Смекта порошок",
+    "name_en": "Smecta Powder",
+    "description_kk": "Іш өтуге қарсы",
+    "description_ru": "При диарее",
+    "description_en": "For diarrhea",
+    "price": "250.00",
+    "stock": 140,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 46,
+  "fields": {
+    "category": 5,
+    "name_kk": "Эспумизан",
+    "name_ru": "Эспумизан",
+    "name_en": "Espumizan",
+    "description_kk": "Желденуге қарсы",
+    "description_ru": "При вздутии живота",
+    "description_en": "Anti-bloating",
+    "price": "1800.00",
+    "stock": 35,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 47,
+  "fields": {
+    "category": 5,
+    "name_kk": "Фестал",
+    "name_ru": "Фестал",
+    "name_en": "Festal",
+    "description_kk": "Ас қорыту ферменті",
+    "description_ru": "Пищеварительный фермент",
+    "description_en": "Digestive enzyme",
+    "price": "1100.00",
+    "stock": 45,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 48,
+  "fields": {
+    "category": 5,
+    "name_kk": "Но-шпа 40мг",
+    "name_ru": "Но-шпа 40мг",
+    "name_en": "No-shpa 40mg",
+    "description_kk": "Іш түйілуін басу",
+    "description_ru": "Спазмолитик",
+    "description_en": "Spasmolytic",
+    "price": "1350.00",
+    "stock": 70,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 49,
+  "fields": {
+    "category": 5,
+    "name_kk": "Панкреатин",
+    "name_ru": "Панкреатин",
+    "name_en": "Pancreatin",
+    "description_kk": "Ас қорыту көмекшісі",
+    "description_ru": "Для пищеварения",
+    "description_en": "Digestion aid",
+    "price": "500.00",
+    "stock": 85,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 50,
+  "fields": {
+    "category": 5,
+    "name_kk": "Гевискон",
+    "name_ru": "Гевискон",
+    "name_en": "Gaviscon",
+    "description_kk": "Қыжылға қарсы",
+    "description_ru": "От изжоги",
+    "description_en": "For heartburn",
+    "price": "2100.00",
+    "stock": 30,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 51,
+  "fields": {
+    "category": 6,
+    "name_kk": "Валидол таблетка",
+    "name_ru": "Валидол таблетки",
+    "name_en": "Validol Tablets",
+    "description_kk": "Жүрек тұсы ауырғанда",
+    "description_ru": "При боли в сердце",
+    "description_en": "For heart pain",
+    "price": "250.00",
+    "stock": 100,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 52,
+  "fields": {
+    "category": 6,
+    "name_kk": "Корвалол тамшы",
+    "name_ru": "Корвалол капли",
+    "name_en": "Corvalol Drops",
+    "description_kk": "Тыныштандырғыш",
+    "description_ru": "Успокоительное",
+    "description_en": "Sedative",
+    "price": "350.00",
+    "stock": 90,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 53,
+  "fields": {
+    "category": 6,
+    "name_kk": "Аспирин Кардио",
+    "name_ru": "Аспирин Кардио",
+    "name_en": "Aspirin Cardio",
+    "description_kk": "Қан сұйылтуға арналған",
+    "description_ru": "Для разжижжения крови",
+    "description_en": "Blood thinner",
+    "price": "1400.00",
+    "stock": 50,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 54,
+  "fields": {
+    "category": 6,
+    "name_kk": "Конкор 5мг",
+    "name_ru": "Конкор 5мг",
+    "name_en": "Concor 5mg",
+    "description_kk": "Қан кысымын реттеу",
+    "description_ru": "Регуляция давления",
+    "description_en": "Blood pressure regulation",
+    "price": "3100.00",
+    "stock": 20,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 55,
+  "fields": {
+    "category": 6,
+    "name_kk": "Лозартан",
+    "name_ru": "Лозартан",
+    "name_en": "Losartan",
+    "description_kk": "Гипертонияға қарсы",
+    "description_ru": "От гипертонии",
+    "description_en": "For hypertension",
+    "price": "1100.00",
+    "stock": 40,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 56,
+  "fields": {
+    "category": 6,
+    "name_kk": "Кардиомагнил",
+    "name_ru": "Кардиомагнил",
+    "name_en": "Cardiomagnyl",
+    "description_kk": "Жүрек қызметін қорғау",
+    "description_ru": "Защита сердца",
+    "description_en": "Heart protection",
+    "price": "1600.00",
+    "stock": 60,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 57,
+  "fields": {
+    "category": 6,
+    "name_kk": "Нитроглицерин",
+    "name_ru": "Нитроглицерин",
+    "name_en": "Nitroglycerin",
+    "description_kk": "Жүрек ұстамасына қарсы",
+    "description_ru": "При сердечном приступе",
+    "description_en": "For heart attack",
+    "price": "400.00",
+    "stock": 70,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 58,
+  "fields": {
+    "category": 6,
+    "name_kk": "Панангин",
+    "name_ru": "Панангин",
+    "name_en": "Panangin",
+    "description_kk": "Жүрек бұлшықетін қоректендіру",
+    "description_ru": "Питание сердечной мышцы",
+    "description_en": "Heart muscle nutrition",
+    "price": "1900.00",
+    "stock": 35,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 59,
+  "fields": {
+    "category": 6,
+    "name_kk": "Аторвастатин",
+    "name_ru": "Аторвастатин",
+    "name_en": "Atorvastatin",
+    "description_kk": "Холестеринді түсіру",
+    "description_ru": "Снижение холестерина",
+    "description_en": "Lowers cholesterol",
+    "price": "2200.00",
+    "stock": 25,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 60,
+  "fields": {
+    "category": 6,
+    "name_kk": "Эналаприл",
+    "name_ru": "Эналаприл",
+    "name_en": "Enalapril",
+    "description_kk": "Қан қысымын түсіру",
+    "description_ru": "Снижение давления",
+    "description_en": "Lowers blood pressure",
+    "price": "300.00",
+    "stock": 110,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 61,
+  "fields": {
+    "category": 7,
+    "name_kk": "Супрастин таблетка",
+    "name_ru": "Супрастин таблетки",
+    "name_en": "Suprastin Tablets",
+    "description_kk": "Аллергияға қарсы классика",
+    "description_ru": "Противоаллергическое",
+    "description_en": "Anti-allergy",
+    "price": "900.00",
+    "stock": 70,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 62,
+  "fields": {
+    "category": 7,
+    "name_kk": "Цетрин",
+    "name_ru": "Цетрин",
+    "name_en": "Cetrine",
+    "description_kk": "Ұйқышылдық тудырмайтын аллергия",
+    "description_ru": "Аллергия без сонливости",
+    "description_en": "Non-drowsy allergy",
+    "price": "1300.00",
+    "stock": 50,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 63,
+  "fields": {
+    "category": 7,
+    "name_kk": "Зиртек тамшы",
+    "name_ru": "Зиртек капли",
+    "name_en": "Zyrtec Drops",
+    "description_kk": "Балалар мен ересектерге",
+    "description_ru": "Для детей и взрослых",
+    "description_en": "For kids and adults",
+    "price": "2100.00",
+    "stock": 30,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 64,
+  "fields": {
+    "category": 7,
+    "name_kk": "Лоратадин",
+    "name_ru": "Лоратадин",
+    "name_en": "Loratadine",
+    "description_kk": "Аллергиялық ринитке қарсы",
+    "description_ru": "При аллергическом рините",
+    "description_en": "For allergic rhinitis",
+    "price": "350.00",
+    "stock": 100,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 65,
+  "fields": {
+    "category": 7,
+    "name_kk": "Эриус",
+    "name_ru": "Эриус",
+    "name_en": "Erius",
+    "description_kk": "Тәуліктік аллергияға қарсы",
+    "description_ru": "Антигистаминное нового поколения",
+    "description_en": "New-gen antihistamine",
+    "price": "3400.00",
+    "stock": 20,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 66,
+  "fields": {
+    "category": 7,
+    "name_kk": "Тавегил",
+    "name_ru": "Тавегил",
+    "name_en": "Tavegil",
+    "description_kk": "Аллергия мен қышуға қарсы",
+    "description_ru": "Против зуда и аллергии",
+    "description_en": "Against itching and allergy",
+    "price": "1500.00",
+    "stock": 40,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 67,
+  "fields": {
+    "category": 7,
+    "name_kk": "Кетотифен",
+    "name_ru": "Кетотифен",
+    "name_en": "Ketotifen",
+    "description_kk": "Аллергиялық астмаға қарсы",
+    "description_ru": "Противоастматическое",
+    "description_en": "Anti-asthmatic",
+    "price": "450.00",
+    "stock": 60,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 68,
+  "fields": {
+    "category": 7,
+    "name_kk": "Фенистил гель",
+    "name_ru": "Фенистил гель",
+    "name_en": "Fenistil Gel",
+    "description_kk": "Терідегі қышуға қарсы гель",
+    "description_ru": "Гель от зуда кожи",
+    "description_en": "Anti-itch gel",
+    "price": "2300.00",
+    "stock": 35,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 69,
+  "fields": {
+    "category": 7,
+    "name_kk": "Аллергодил тамшы",
+    "name_ru": "Аллергодил капли",
+    "name_en": "Allergodil Drops",
+    "description_kk": "Көз аллергиясына",
+    "description_ru": "При аллергии глаз",
+    "description_en": "For eye allergy",
+    "price": "2700.00",
+    "stock": 15,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 70,
+  "fields": {
+    "category": 7,
+    "name_kk": "Полисорб порошок",
+    "name_ru": "Полисорб порошок",
+    "name_en": "Polisorb Powder",
+    "description_kk": "Аллергендерді шығару",
+    "description_ru": "Вывод аллергенов",
+    "description_en": "Toxin removal",
+    "price": "1800.00",
+    "stock": 45,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 71,
+  "fields": {
+    "category": 8,
+    "name_kk": "Алтей шәрбаты",
+    "name_ru": "Сироп алтея",
+    "name_en": "Althea Syrup",
+    "description_kk": "Жөтелді жұмсарту",
+    "description_ru": "Смягчение кашля",
+    "description_en": "Cough softener",
+    "price": "550.00",
+    "stock": 60,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 72,
+  "fields": {
+    "category": 8,
+    "name_kk": "Жөргемшөп шәрбаты",
+    "name_ru": "Сироп солодки",
+    "name_en": "Licorice Syrup",
+    "description_kk": "Қақырық түсіретін шөп",
+    "description_ru": "Отхаркивающее",
+    "description_en": "Expectorant",
+    "price": "450.00",
+    "stock": 80,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 73,
+  "fields": {
+    "category": 8,
+    "name_kk": "Түймедақ шөбі (ромашка)",
+    "name_ru": "Трава ромашки",
+    "name_en": "Chamomile Tea",
+    "description_kk": "Қабынуға қарсы шөп",
+    "description_ru": "Противовоспалительный чай",
+    "description_en": "Anti-inflammatory herb",
+    "price": "300.00",
+    "stock": 120,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 74,
+  "fields": {
+    "category": 8,
+    "name_kk": "Малғақшөп (подорожник)",
+    "name_ru": "Подорожник сироп",
+    "name_en": "Plantain Syrup",
+    "description_kk": "Жөтелге қарсы шөп",
+    "description_ru": "Трава от кашля",
+    "description_en": "Herbal cough syrup",
+    "price": "650.00",
+    "stock": 50,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 75,
+  "fields": {
+    "category": 8,
+    "name_kk": "Жинақ №1 (кеуде)",
+    "name_ru": "Грудной сбор №1",
+    "name_en": "Chest Collection №1",
+    "description_kk": "Тыныс алуды жеңілдету",
+    "description_ru": "Облегчение дыхания",
+    "description_en": "Eases breathing",
+    "price": "400.00",
+    "stock": 90,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 76,
+  "fields": {
+    "category": 8,
+    "name_kk": "Иван-чай",
+    "name_ru": "Иван-чай",
+    "name_en": "Ivan-tea",
+    "description_kk": "Тыныштандыратын шөп",
+    "description_ru": "Успокаивающий чай",
+    "description_en": "Calming tea",
+    "price": "800.00",
+    "stock": 40,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 77,
+  "fields": {
+    "category": 8,
+    "name_kk": "Тимьян (киікоты)",
+    "name_ru": "Трава чабреца",
+    "name_en": "Thyme Herb",
+    "description_kk": "Антисептикалық шөп",
+    "description_ru": "Антисептическая трава",
+    "description_en": "Antiseptic herb",
+    "price": "350.00",
+    "stock": 70,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 78,
+  "fields": {
+    "category": 8,
+    "name_kk": "Балдырған шәрбаты",
+    "name_ru": "Сироп шиповника",
+    "name_en": "Rosehip Syrup",
+    "description_kk": "Витаминге бай шәрбат",
+    "description_ru": "Богат витамином C",
+    "description_en": "Rich in vitamins",
+    "price": "900.00",
+    "stock": 55,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 79,
+  "fields": {
+    "category": 8,
+    "name_kk": "Мята жапырақтары",
+    "name_ru": "Листья мяты",
+    "name_en": "Mint Leaves",
+    "description_kk": "Ас қорытуға және тынышқа",
+    "description_ru": "Для пищеварения и нервов",
+    "description_en": "For digestion and nerves",
+    "price": "380.00",
+    "stock": 65,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 80,
+  "fields": {
+    "category": 8,
+    "name_kk": "Валериана тамыры",
+    "name_ru": "Корень валерианы",
+    "name_en": "Valerian Root",
+    "description_kk": "Жүйке жүйесін тыныштандыру",
+    "description_ru": "Успокоительное средство",
+    "description_en": "Calming remedy",
+    "price": "500.00",
+    "stock": 85,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 81,
+  "fields": {
+    "category": 9,
+    "name_kk": "Медициналық бетперде (50 дана)",
+    "name_ru": "Медицинские маски (50 шт)",
+    "name_en": "Medical Masks (50 pcs)",
+    "description_kk": "Қорғаныс бетперделері",
+    "description_ru": "Защитные маски",
+    "description_en": "Protective masks",
+    "price": "1200.00",
+    "stock": 200,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 82,
+  "fields": {
+    "category": 9,
+    "name_kk": "Антисептик для рук 100мл",
+    "name_ru": "Антисептик для рук 100мл",
+    "name_en": "Hand Antiseptic 100ml",
+    "description_kk": "Қолды зарарсыздандыру",
+    "description_ru": "Дезинфекция рук",
+    "description_en": "Hand disinfection",
+    "price": "600.00",
+    "stock": 150,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 83,
+  "fields": {
+    "category": 9,
+    "name_kk": "Бинт стерильді 7х14",
+    "name_ru": "Бинт стерильный 7х14",
+    "name_en": "Sterile Bandage",
+    "description_kk": "Жараны таңуға арналған",
+    "description_ru": "Для перевязки ран",
+    "description_en": "For wound dressing",
+    "price": "250.00",
+    "stock": 180,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 84,
+  "fields": {
+    "category": 9,
+    "name_kk": "Мақта медициналық 100г",
+    "name_ru": "Вата медицинская 100г",
+    "name_en": "Medical Cotton 100g",
+    "description_kk": "Медициналық мақта",
+    "description_ru": "Медицинская вата",
+    "description_en": "Medical cotton",
+    "price": "400.00",
+    "stock": 110,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 85,
+  "fields": {
+    "category": 9,
+    "name_kk": "Пластырь бактерицидный",
+    "name_ru": "Бактерицидный пластырь",
+    "name_en": "Bactericidal Plaster",
+    "description_kk": "Жараға жабыстыру",
+    "description_ru": "Для мелких ран",
+    "description_en": "Adhesive bandage",
+    "price": "150.00",
+    "stock": 300,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 86,
+  "fields": {
+    "category": 9,
+    "name_kk": "Градусник электронный",
+    "name_ru": "Электронный градусник",
+    "name_en": "Digital Thermometer",
+    "description_kk": "Қызу өлшеу",
+    "description_ru": "Измерение температуры",
+    "description_en": "Temperature measurement",
+    "price": "1800.00",
+    "stock": 40,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 87,
+  "fields": {
+    "category": 9,
+    "name_kk": "Шприц 5 мл (10 дана)",
+    "name_ru": "Шприцы 5 мл (10 шт)",
+    "name_en": "Syringes 5 ml (10 pcs)",
+    "description_kk": "Инъекция үшін",
+    "description_ru": "Для инъекций",
+    "description_en": "For injections",
+    "price": "500.00",
+    "stock": 90,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 88,
+  "fields": {
+    "category": 9,
+    "name_kk": "Тонометр автоматты",
+    "name_ru": "Тонометр автоматический",
+    "name_en": "Automatic Tonometer",
+    "description_kk": "Қан қысымын өлшеу",
+    "description_ru": "Измерение давления",
+    "description_en": "Blood pressure monitor",
+    "price": "9500.00",
+    "stock": 10,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 89,
+  "fields": {
+    "category": 9,
+    "name_kk": "Медициналық қолғап (10 дана)",
+    "name_ru": "Медицинские перчатки (10 шт)",
+    "name_en": "Medical Gloves (10 pcs)",
+    "description_kk": "Қорғаныс қолғаптары",
+    "description_ru": "Защитные перчатки",
+    "description_en": "Protective gloves",
+    "price": "400.00",
+    "stock": 130,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 90,
+  "fields": {
+    "category": 9,
+    "name_kk": "Эластичный бинт",
+    "name_ru": "Эластичный бинт",
+    "name_en": "Elastic Bandage",
+    "description_kk": "Буындарды бекіту",
+    "description_ru": "Фиксация суставов",
+    "description_en": "Joint fixation",
+    "price": "1100.00",
+    "stock": 45,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 91,
+  "fields": {
+    "category": 10,
+    "name_kk": "Левомеколь мазь",
+    "name_ru": "Мазь Левомеколь",
+    "name_en": "Levomekol Ointment",
+    "description_kk": "Жараны емдеу және қабынуға қарсы",
+    "description_ru": "Заживление ран и противовоспалительное",
+    "description_en": "Wound healing and anti-inflammatory",
+    "price": "850.00",
+    "stock": 75,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 92,
+  "fields": {
+    "category": 10,
+    "name_kk": "Цинковая мазь",
+    "name_ru": "Цинковая мазь",
+    "name_en": "Zinc Ointment",
+    "description_kk": "Тері бөртпелеріне қарсы",
+    "description_ru": "При сыпи и раздражении",
+    "description_en": "For rash and irritation",
+    "price": "350.00",
+    "stock": 110,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 93,
+  "fields": {
+    "category": 10,
+    "name_kk": "Бепантен крем",
+    "name_ru": "Крем Бепантен",
+    "name_en": "Bepanthen Cream",
+    "description_kk": "Нәрестелерге және тері құрғауына",
+    "description_ru": "Для кожи и младенцев",
+    "description_en": "For skin and babies",
+    "price": "2400.00",
+    "stock": 30,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 94,
+  "fields": {
+    "category": 10,
+    "name_kk": "Пантенол спрей",
+    "name_ru": "Пантенол спрей",
+    "name_en": "Panthenol Spray",
+    "description_kk": "Күйікке қарсы спрей",
+    "description_ru": "При ожогах",
+    "description_en": "For burns",
+    "price": "1900.00",
+    "stock": 45,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 95,
+  "fields": {
+    "category": 10,
+    "name_kk": "Акридерм крем",
+    "name_ru": "Крем Акридерм",
+    "name_en": "Akriderm Cream",
+    "description_kk": "Тері қабынуына қарсы",
+    "description_ru": "При дерматите",
+    "description_en": "For dermatitis",
+    "price": "1600.00",
+    "stock": 25,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 96,
+  "fields": {
+    "category": 10,
+    "name_kk": "Спасатель бальзам",
+    "name_ru": "Бальзам Спасатель",
+    "name_en": "Rescuer Balm",
+    "description_kk": "Көгерген мен жараға",
+    "description_ru": "При ушибах и ранах",
+    "description_en": "For bruises and wounds",
+    "price": "750.00",
+    "stock": 60,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 97,
+  "fields": {
+    "category": 10,
+    "name_kk": "Салициловая кислота",
+    "name_ru": "Салициловая кислота",
+    "name_en": "Salicylic Acid",
+    "description_kk": "Безеуге қарсы",
+    "description_ru": "Против прыщей",
+    "description_en": "Anti-acne",
+    "price": "200.00",
+    "stock": 100,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 98,
+  "fields": {
+    "category": 10,
+    "name_kk": "Клотримазол мазь",
+    "name_ru": "Клотримазол мазь",
+    "name_en": "Clotrimazole Ointment",
+    "description_kk": "Саңырауқұлаққа қарсы",
+    "description_ru": "Противогрибковое",
+    "description_en": "Antifungal",
+    "price": "450.00",
+    "stock": 50,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 99,
+  "fields": {
+    "category": 10,
+    "name_kk": "Троксевазин гель",
+    "name_ru": "Троксевазин гель",
+    "name_en": "Troxevasin Gel",
+    "description_kk": "Аяқ ауыруы мен варикозға",
+    "description_ru": "При варикозе и усталости ног",
+    "description_en": "For varicose veins",
+    "price": "1400.00",
+    "stock": 35,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.medicine",
+  "pk": 100,
+  "fields": {
+    "category": 10,
+    "name_kk": "Радевит крем",
+    "name_ru": "Крем Радевит",
+    "name_en": "Radevit Cream",
+    "description_kk": "Теріні қалпына келтіру",
+    "description_ru": "Регенерация кожи",
+    "description_en": "Skin regeneration",
+    "price": "2100.00",
+    "stock": 20,
+    "age_limit": "Жоқ"
+  }
+},
+{
+  "model": "core.order",
+  "pk": 1,
+  "fields": {
+    "full_name": "Almas",
+    "phone": "+77058883345",
+    "address": "Taraz Tole bi 64",
+    "total_price": "2850.00",
+    "payment_type": "qr",
+    "is_completed": false,
+    "created_at": "2026-10-08T13:32:53.610Z"
+  }
+},
+{
+  "model": "core.order",
+  "pk": 2,
+  "fields": {
+    "full_name": "Almas",
+    "phone": "+77058883345",
+    "address": "Taraz Tole bi 64",
+    "total_price": "2400.00",
+    "payment_type": "qr",
+    "is_completed": false,
+    "created_at": "2026-10-08T13:37:33.418Z"
+  }
+},
+{
+  "model": "core.order",
+  "pk": 3,
+  "fields": {
+    "full_name": "Almas",
+    "phone": "+77058883345",
+    "address": "Taraz Tole bi 64",
+    "total_price": "2800.00",
+    "payment_type": "qr",
+    "is_completed": false,
+    "created_at": "2026-10-08T14:00:45.640Z"
+  }
+},
+{
+  "model": "core.order",
+  "pk": 4,
+  "fields": {
+    "full_name": "Almas",
+    "phone": "+77058883345",
+    "address": "Taraz",
+    "total_price": "1200.00",
+    "payment_type": "qr",
+    "is_completed": false,
+    "created_at": "2026-10-09T04:35:39.811Z"
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "medicine": 3,
+    "quantity": 3,
+    "price": "950.00"
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "medicine": 1,
+    "quantity": 2,
+    "price": "1200.00"
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "medicine": 2,
+    "quantity": 1,
+    "price": "1850.00"
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 3,
+    "medicine": 3,
+    "quantity": 1,
+    "price": "950.00"
+  }
+},
+{
+  "model": "core.orderitem",
+  "pk": 5,
+  "fields": {
+    "order": 4,
+    "medicine": 1,
+    "quantity": 1,
+    "price": "1200.00"
+  }
+}
+]
